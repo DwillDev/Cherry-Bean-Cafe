@@ -1,0 +1,40 @@
+h1,
+h2,
+h3 {
+  font-family: $header;
+  color: $dred;
+}
+
+p {
+  font-family: $subtext;
+  color: $redpink;
+}
+
+button,
+li {
+  font-family: $component;
+}
+
+li,
+.iconify {
+  color: $dred;
+}
+
+.item {
+  &__name {
+    color: $lpink;
+  }
+
+  &__desc {
+    color: $mred;
+  }
+
+  &__cc {
+    color: $lpink;
+  }
+}
+
+hr {
+  border: none;
+  border-bottom: 0.1rem solid rgba($redpink, 0.5);
+}
