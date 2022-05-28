@@ -12,12 +12,8 @@
   <body>
     <div class="container">
       <header class="header">
-        <img
-          src="./img/logo.svg"
-          alt="cherry bean cafe logo"
-          class="header__logo"
-        />
-        <span class="iconify header__menu" data-icon="bx:menu-alt-right"></span>
+        <img src="./img/logo.svg" alt="cherry bean cafe logo" class="header__logo" />
+        <span class="iconify header__menu hide" data-icon="bx:menu-alt-right"></span>
         <nav class="header__nav header__nav--pc nav">
           <ul class="nav__list nav__list--pc">
             <li class="nav__item" href="#home">Home</li>
@@ -26,8 +22,8 @@
             <li class="nav__item" href="#contact">Contact</li>
           </ul>
         </nav>
-        <nav class="header__nav header__nav--mb nav">
-          <img src="./img/logo-simple.svg" alt="cherry bean cafe logo" class="nav_logo"/>
+        <nav class="header__nav header__nav--mb nav hide">
+          <img src="./img/logo-simple.svg" alt="cherry bean cafe logo" class="nav_logo" />
           <ul class="nav__list nav__list--mb">
             <li class="nav__item" href="#home">Home</li>
             <li class="nav__item" href="#about">Our Story</li>
@@ -35,58 +31,53 @@
             <li class="nav__item" href="#contact">Contact</li>
           </ul>
           <div class="nav__socials">
-            <span
-              class="iconify nav__icon"
-              data-icon="iconoir:instagram"
-            ></span>
+            <span class="iconify nav__icon" data-icon="iconoir:instagram"></span>
             <span class="iconify nav__icon" data-icon="iconoir:facebook"></span>
             <span class="iconify nav__icon" data-icon="iconoir:twitter"></span>
           </div>
         </nav>
-        <hr class="header__divider" />
       </header>
+      <hr class="divider divider--header" />
       <main>
-        <section id="home">
+        <section id="home" class="home">
           <div class="home__txt txt">
-            <h1 class="home__header header">
-              We don't make your coffee, we make your day.
-            </h1>
+            <h1 class="home__header header">We don't make your coffee, we make your day.</h1>
             <p class="home__para para">
-              At Cherry Bean Café, we strive to accommodate every customer.
-              Whether you're looking for a place to work, some creative
-              inspiration, or just want to hang out and chat with friends -
-              we've got you covered.
+              At Cherry Bean Café, we strive to accommodate every customer. Whether you're looking
+              for a place to work, some creative inspiration, or just want to hang out and chat with
+              friends - we've got you covered.
             </p>
+            <button class="btn btn--menu">View the Menu</button>
           </div>
-          <img src="./img/hero-image.svg" alt="hero image" class="home__image image"/>
-          <button class="btn btn--menu"></button>
+          <img src="./img/hero-image.svg" alt="hero image" class="home__image image" />
         </section>
-        <section id="about">
+        <section id="about" class="about">
           <div class="about__txt txt">
             <h2 class="about__header header">Our Story</h2>
             <p class="about__para para">
-              Cherry Bean Café is a black woman-owned coffee shop in Chicago
-              that serves up delicious coffee, pastries, and sandwiches. Since
-              our opening in July 2018, our goal has been to provide a space
-              where people can come to relax and enjoy good food and drinks. We
-              also want to give back to our community by providing jobs and
-              opportunities for black people.
+              Cherry Bean Café is a black woman-owned coffee shop in Chicago that serves up
+              delicious coffee, pastries, and sandwiches. Since our opening in July 2018, our goal
+              has been to provide a space where people can come to relax and enjoy good food and
+              drinks. We also want to give back to our community by providing jobs and opportunities
+              for black people.
             </p>
           </div>
-          <img src="./img/about-image.svg" alt="An image of a server behind the counter of a coffee shop helping a customer."class="about__image image"/>
+          <img
+            src="./img/about-image.svg"
+            alt="An image of a server behind the counter of a coffee shop helping a customer."
+            class="about__image image"
+          />
         </section>
-        <section id="menu">
+        <section id="menu" class="menu">
           <h2 class="menu__header header">Menu</h2>
           <nav class="menu__nav">
             <ul class="menu__list">
               <li class="menu__cat">Coffee</li>
               <li class="menu__cat">Pastry</li>
               <li class="menu__cat">Sandwiches</li>
-              <li class="menu__cat" href="./coffee-chooser.html">
-                Coffee Chooser
-              </li>
+              <li class="menu__cat" href="./coffee-chooser.html">Coffee Chooser</li>
             </ul>
-            <hr class="menu__cat-divider" />
+            <hr class="divider divider--menu-cat" />
           </nav>
           <div class="menu__content menu__content--coffee">
             <!-- <div class="menu__item item">
@@ -96,13 +87,13 @@
               <div class="item__cc">
                 <span class="iconify" data-icon="akar-icons:coffee"></span>
               </div> -->
-            </div>
+          </div>
           <div class="menu__content menu__content--pastries"></div>
           <div class="menu__content menu__content--sandwiches"></div>
         </section>
-        <section id="visit">
-          <div class="visit__txt">
-            <h2 class="visit__header header">Visit Us</h2>
+        <section id="visit" class="visit">
+          <h2 class="visit__header header">Visit Us</h2>
+          <div class="visit__content">
             <div class="visit__card card">
               <address class="card__address">
                 <h3 class="card__header">Cherry Bean Café</h3>
@@ -118,29 +109,54 @@
                 Sat-Sun: 9AM - 4PM
               </p>
             </div>
+            <img
+              src="./img/visit-map.svg"
+              alt="a map showing where Cherry Bean Café is located."
+              class="visit__image image"
+            />
           </div>
-          <img src="./img/visit-map.svg" alt="a map showing where Cherry Bean Café is located." class="visit__image image"/>
         </section>
-        <section id="contact">
-          <form action="" method="post" class="contact__form">
+        <section id="contact" class="contact">
+          <img
+            src="./img/contact-image.svg"
+            alt="image of a hand holding a phone"
+            class="contact__image image"
+          />
+          <div class="contact__txt txt">
             <h2 class="contact__header header">Contact</h2>
-            <label for="name"
-              >Name
-              <input type="text" name="name" placeholder="Name" required />
-            </label>
-            <label for="email"
-              >Email
-              <input type="email" name="email" placeholder="E-mail" required />
-            </label>
-            <label for="email"
-              >Subject
-              <textarea placeholder="Subject" required></textarea>
-            </label>
-          </form>
-          <img src="./img/contact-image.svg" alt="image of a hand holding a phone" class="contact__image image"/>
+            <form action="" method="post" class="contact__form">
+              <label for="name"
+                >Name
+                <input type="text" name="name" placeholder="Name" required />
+              </label>
+              <label for="email"
+                >Email
+                <input type="email" name="email" placeholder="E-mail" required />
+              </label>
+              <label for="email"
+                >Subject
+                <textarea placeholder="Subject" required></textarea>
+              </label>
+            </form>
+          </div>
         </section>
       </main>
-      <footer></footer>
+      <hr class="divider divider--footer" />
+      <footer class="footer">
+        <img src="./img/logo-simple.svg" alt="cherry bean cafe logo" class="footer_logo" />
+        <nav class="footer__nav nav">
+          <ul class="nav__list">
+            <li class="nav__item" href="#">Terms</li>
+            <li class="nav__item" href="#">Privacy</li>
+            <li class="nav__item" href="#">Cookies</li>
+          </ul>
+        </nav>
+        <div class="footer__socials">
+          <span class="iconify footer__icon" data-icon="iconoir:instagram"></span>
+          <span class="iconify footer__icon" data-icon="iconoir:facebook"></span>
+          <span class="iconify footer__icon" data-icon="iconoir:twitter"></span>
+        </div> 
+      </footer>
     </div>
     <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
     <!-- <script src="./js/script.js"></script> -->
