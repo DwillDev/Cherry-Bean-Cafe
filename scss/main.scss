@@ -9,8 +9,8 @@
 @import "base/base", "base/fonts", "base/typography", "base/helpers";
 
 // 4. Layout-related sections
-@import "layout/header", "layout/home", "layout/about", "layout/menu", "layout/visit",
-  "layout/contact","layout/mb-nav";
+@import "layout/header","layout/footer", "layout/home", "layout/about", "layout/menu", "layout/visit",
+  "layout/contact","layout/nav";
 
 // 5. Components
 @import 'components/button','components/menu-card','components/form';

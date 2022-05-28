@@ -5,6 +5,21 @@ h3 {
   color: $dred;
 }
 
+.menu,
+.visit {
+  h2 {
+    text-align: center;
+  }
+}
+
+.home,
+.about,
+.contact {
+  h2 {
+    text-align: left;
+  }
+}
+
 p {
   font-family: $subtext;
   color: $redpink;
@@ -13,6 +28,10 @@ p {
 button,
 li {
   font-family: $component;
+}
+
+ul {
+  list-style-type: none;
 }
 
 li,
@@ -34,7 +53,11 @@ li,
   }
 }
 
-hr {
+.divider {
   border: none;
   border-bottom: 0.1rem solid rgba($redpink, 0.5);
+}
+
+*::placeholder{
+  font-family: $component;
 }

@@ -1,0 +1,7 @@
+.menu{
+    flex-direction: column;
+    
+ &__list{
+     @extend .nav__list;
+ }
+}
