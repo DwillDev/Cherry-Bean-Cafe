@@ -1,9 +1,15 @@
-.nav{
-    margin:auto 0;
-    &__list{
-        display:flex;
-        align-items: center;
-        justify-content: space-evenly;
-        gap:clamp(2rem,2vw,4rem);
+.nav {
+  margin: auto 0;
+
+  &__list {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: clamp(2rem, 2vw, 4rem);
+
+    & > *:hover {
+      font-weight: $semibold;
+      cursor:pointer;
     }
+  }
 }
