@@ -16,3 +16,8 @@ $semibold:600;
 $bold:700;
 
 //Sizes
+$h1:calc(max(2rem,3.5vw));
+$p: calc(max(1.1rem,1.3vw));
+$button:calc(max(1rem,1.5vh));
+// make it 3vh for 8k screen
+$nav:calc(max(1.1rem,1vw));

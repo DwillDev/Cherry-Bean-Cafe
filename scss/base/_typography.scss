@@ -4,6 +4,23 @@ h3 {
   font-family: $header;
   color: $dred;
 }
+h1{
+  font-size: $h1;
+  font-weight: $med;
+}
+
+h2{
+
+}
+
+h3{
+
+}
+
+p{
+  font-size: $p;
+  font-weight: $med;
+}
 
 .menu,
 .visit {
@@ -30,8 +47,14 @@ li {
   font-family: $component;
 }
 
+button{
+  color:$lpink;
+  font-size:$button;
+}
+
 ul {
   list-style-type: none;
+  font-size: $nav;
 }
 
 li,
@@ -40,16 +63,12 @@ li,
 }
 
 .item {
-  &__name {
+  &__name, &__cc {
     color: $lpink;
   }
 
   &__desc {
     color: $mred;
-  }
-
-  &__cc {
-    color: $lpink;
   }
 }
 
