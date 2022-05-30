@@ -1,3 +1,8 @@
-header{
+.header{
     justify-content: space-between;
+    padding-top:2%;
+
+    &__logo{
+        width:7%;
+    }
 }

@@ -4,10 +4,7 @@ body {
 }
 
 .container {
-  width: calc(100% - 4rem);
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
+  width: calc(100% - 6rem);
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (1fr)[12];
@@ -20,9 +17,6 @@ body {
 }
 
 .container > * {
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 12;
-  grid-column: 1 / 13;
   width: 100%;
 }
 
@@ -31,31 +25,69 @@ footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 12;
+  grid-column: 1 / 13;
 }
 
 main {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 10;
+  grid-column: 2/12;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[12];
-      grid-template-columns: repeat(12, 1fr);
+  gap: 2rem;
+  -ms-grid-columns: (1fr)[10];
+      grid-template-columns: repeat(10, 1fr);
   -ms-grid-rows: 90vh (100vh)[3] 90vh;
       grid-template-rows: 90vh repeat(3, 100vh) 90vh;
 }
 
 main > * {
   -ms-grid-column: 1;
-  -ms-grid-column-span: 12;
-  grid-column: 1 / 13;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  -ms-grid-column-span: 10;
+  grid-column: 1 / 11;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: inherit;
+      grid-template-columns: inherit;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.home > *,
-.about > *, .contact > * {
-  -webkit-box-flex: 0;
-      -ms-flex: 0 0 50%;
-          flex: 0 0 50%;
+.home__txt,
+.visit__txt {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 5;
+  grid-column: 1 / 6;
+}
+
+.home__image,
+.visit__image {
+  -ms-grid-column: 7;
+  -ms-grid-column-span: 4;
+  grid-column: 7 / 11;
+}
+
+.about__image,
+.contact__image {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 4;
+  grid-column: 1 / 5;
+}
+
+.about__txt,
+.contact__txt {
+  -ms-grid-column: 6;
+  -ms-grid-column-span: 5;
+  grid-column: 6 / 11;
 }
 
 h1,
@@ -63,6 +95,16 @@ h2,
 h3 {
   font-family: "Yeseva One", cursive;
   color: #570014;
+}
+
+h1 {
+  font-size: calc(max(2rem,3.5vw));
+  font-weight: 400;
+}
+
+p {
+  font-size: calc(max(1.1rem,1.3vw));
+  font-weight: 400;
 }
 
 .menu h2,
@@ -86,8 +128,14 @@ li {
   font-family: "Inter", sans-serif;
 }
 
+button {
+  color: #f4e6e9;
+  font-size: calc(max(1rem,1.5vh));
+}
+
 ul {
   list-style-type: none;
+  font-size: calc(max(1.1rem,1vw));
 }
 
 li,
@@ -95,16 +143,12 @@ li,
   color: #570014;
 }
 
-.item__name {
+.item__name, .item__cc {
   color: #f4e6e9;
 }
 
 .item__desc {
   color: #a51232;
-}
-
-.item__cc {
-  color: #f4e6e9;
 }
 
 .divider {
@@ -154,19 +198,19 @@ img {
   display: none;
 }
 
-header,
-footer, main > * {
-  border: 1px solid black;
-}
-
 .container {
   margin: 0 auto;
 }
 
-header {
+.header {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  padding-top: 2%;
+}
+
+.header__logo {
+  width: 7%;
 }
 
 .footer {
@@ -180,6 +224,15 @@ header {
 
 .footer__socials {
   margin: auto 0;
+}
+
+.home__header {
+  margin-bottom: 2%;
+}
+
+.home__para {
+  margin-bottom: 8%;
+  padding-right: 7%;
 }
 
 .menu {
@@ -200,6 +253,9 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
 }
 
 .visit__content > * {
@@ -223,6 +279,29 @@ header {
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
   gap: clamp(2rem, 2vw, 4rem);
+}
+
+.nav__list > *:hover, .menu__list > *:hover {
+  font-weight: 600;
+  cursor: pointer;
+}
+
+button {
+  border: none;
+  background-color: #a51232;
+  border-radius: 5vw;
+  width: calc(max(10rem,25%));
+  height: calc(max(3.5rem,7vh));
+  -webkit-transition-property: border,background-color,color;
+  transition-property: border,background-color,color;
+  -webkit-transition-duration: .5s;
+          transition-duration: .5s;
+}
+
+button:hover {
+  background-color: #f4e6e9;
+  color: #a51232;
+  border: 0.1rem solid #a51232;
 }
 
 .contact__form {

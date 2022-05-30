@@ -3,6 +3,7 @@
 
   &__content {
     display: flex;
+    align-items: stretch;
 
     & > * {
       flex: 0 0 50%;
