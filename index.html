@@ -41,9 +41,7 @@
       <main>
         <section id="home" class="home">
           <div class="home__txt txt">
-            <h1 class="home__header header">We Don't Just Make Your Coffee, We Make Your Day.
-
-            </h1>
+            <h1 class="home__header header">We Don't Just Make Your Coffee, We Make Your Day.</h1>
             <p class="home__para para">
               At Cherry Bean Café, we strive to accommodate every customer. Whether you're looking
               for a place to work, some creative inspiration, or just want to hang out and chat with
@@ -75,46 +73,51 @@
           <nav class="menu__nav">
             <ul class="menu__list">
               <li class="menu__cat">Coffee</li>
-              <li class="menu__cat">Pastry</li>
+              <li class="menu__cat">Pastries</li>
               <li class="menu__cat">Sandwiches</li>
-              <li class="menu__cat" href="./coffee-chooser.html">Coffee Chooser</li>
+              <li class="menu__cat">Salads</li>
             </ul>
-            <hr class="divider divider--menu-cat" />
+            <hr class="divider divider--menu" />
           </nav>
-          <div class="menu__content menu__content--coffee">
-            <!-- <div class="menu__item item">
+          <!-- <div class="menu__content menu__content--coffee">
+            <div class="menu__item item">
               <div class="item__name"></div>
               <div class="item__image"></div>
               <div class="item__desc"></div>
               <div class="item__cc">
                 <span class="iconify" data-icon="akar-icons:coffee"></span>
-              </div> -->
-          </div>
-          <div class="menu__content menu__content--pastries"></div>
-          <div class="menu__content menu__content--sandwiches"></div>
+              </div>
+          </div> -->
+          <!-- <div class="menu__content menu__content--pastries"></div>
+          <div class="menu__content menu__content--sandwiches"></div> -->
         </section>
         <section id="visit" class="visit">
           <h2 class="visit__header header">Visit Us</h2>
-            <div class="visit__txt card">
-              <address class="card__address">
-                <h3 class="card__header">Cherry Bean Café</h3>
-                <p class="card__loc">
-                  480 Lowland Drive <br />
-                  Chicago,Illinois 60601<br />
-                  United States
-                </p>
-                <a href="tel:+18153778878" class="card__phone">(815)377-8878</a>
-              </address>
-              <p class="card__schedule">
+          <div class="visit__txt">
+            <div class="visit__hours">
+              <h3>Hours</h3>
+              <p>
                 Mon-Fri: 7:30AM - 8PM<br />
                 Sat-Sun: 9AM - 4PM
               </p>
             </div>
-            <img
-              src="./img/visit-map.svg"
-              alt="a map showing where Cherry Bean Café is located."
-              class="visit__image"
-            />
+            <address class="visit__address">
+              <h3>Location</h3>
+              <p>
+                480 Lowland Drive <br />
+                Chicago,Illinois 60601<br />
+              </p>
+            </address>
+            <div class="visit__phone">
+              <h3>Phone</h3>
+              <p>(815)377-8878</p>
+            </div>
+          </div>
+          <img
+            src="./img/visit-map.svg"
+            alt="a map showing where Cherry Bean Café is located."
+            class="visit__image"
+          />
         </section>
         <section id="contact" class="contact">
           <img
@@ -133,17 +136,18 @@
                 >Email
                 <input type="email" name="email" placeholder="E-mail" required />
               </label>
-              <label for="email"
+              <label for="Subject"
                 >Subject
                 <textarea placeholder="Subject" required></textarea>
               </label>
+              <input type ="submit" value="Submit" class="btn contact__submit"/>
             </form>
           </div>
         </section>
       </main>
       <hr class="divider divider--footer" />
       <footer class="footer">
-        <img src="./img/logo-simple.svg" alt="cherry bean cafe logo" class="footer_logo" />
+        <img src="./img/logo-simple.svg" alt="cherry bean cafe logo" class="footer__logo" />
         <nav class="footer__nav nav">
           <ul class="nav__list">
             <li class="nav__item" href="#">Terms</li>
@@ -155,7 +159,7 @@
           <span class="iconify footer__icon" data-icon="iconoir:instagram"></span>
           <span class="iconify footer__icon" data-icon="iconoir:facebook"></span>
           <span class="iconify footer__icon" data-icon="iconoir:twitter"></span>
-        </div> 
+        </div>
       </footer>
     </div>
     <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
