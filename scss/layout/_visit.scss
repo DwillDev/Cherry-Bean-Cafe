@@ -1,14 +1,38 @@
 .visit {
-  flex-direction: column;
+  grid-template-rows: min-content 1fr; 
 
-  &__content {
-    display: flex;
-    align-items: stretch;
+  & > *:not(.visit__header){
+    justify-self: center;
+  }
 
-    & > * {
-      flex: 0 0 50%;
-    }
+  &__header{
+    grid-column: 1 / 11;
+  }
 
+  &__txt {
+    grid-column:2 / 4;
+    display:flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    gap:5vh;
+    text-align: center;
+  }
+
+  &__image{
+    grid-column:5 / 10;
+  }
+
+  &__hours{
+
+  }
+
+  &__address{
+    font-style: normal;
+    
+  }
+
+  h3{
+    padding-bottom:3%;
   }
   
 }

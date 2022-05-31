@@ -1,7 +1,21 @@
-.menu{
-    flex-direction: column;
-    
- &__list{
-     @extend .nav__list;
- }
+.menu {
+  grid-template-rows: min-content 1fr;
+
+  &__header {
+    grid-column: 1 / 11;
+  }
+
+  &__nav {
+    justify-self: center;
+    grid-column: 4/8;
+  }
+  &__list {
+    padding-bottom: 1.5%;
+    @extend .nav__list;
+  }
+
+  .divider {
+    border-bottom-width: 0.4rem;
+    width:100%;
+  }
 }

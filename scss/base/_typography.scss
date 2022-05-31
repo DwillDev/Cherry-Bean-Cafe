@@ -3,21 +3,21 @@ h2,
 h3 {
   font-family: $header;
   color: $dred;
-}
-h1{
-  font-size: $h1;
   font-weight: $med;
 }
-
-h2{
-
+h1 {
+  font-size: $h1;
 }
 
-h3{
-
+h2 {
+  font-size: $h2;
 }
 
-p{
+h3 {
+  font-size:$h3;
+}
+
+p {
   font-size: $p;
   font-weight: $med;
 }
@@ -42,14 +42,14 @@ p {
   color: $redpink;
 }
 
-button,
+.btn,
 li {
   font-family: $component;
 }
 
-button{
-  color:$lpink;
-  font-size:$button;
+.btn {
+  color: $lpink;
+  font-size: $button;
 }
 
 ul {
@@ -63,7 +63,8 @@ li,
 }
 
 .item {
-  &__name, &__cc {
+  &__name,
+  &__cc {
     color: $lpink;
   }
 
@@ -75,8 +76,11 @@ li,
 .divider {
   border: none;
   border-bottom: 0.1rem solid rgba($redpink, 0.5);
+  grid-column: 1 / 13;
 }
 
-*::placeholder{
+*::placeholder {
   font-family: $component;
+  color:rgba($redpink, 0.7);
+  font-size:$input;
 }

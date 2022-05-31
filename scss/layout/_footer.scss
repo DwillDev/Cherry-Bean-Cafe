@@ -1,8 +1,23 @@
-.footer{
-     display:flex;
-     justify-content: space-evenly;
+.footer {
+  display: flex;
+  justify-content: space-evenly;
 
-     &__socials{
-         margin:auto 0;
-     }
+  &__socials {
+    margin: auto 0;
+    display:flex;
+    gap:1rem;
+
+    & > * {
+      font-size: calc(max(1.4rem,1.5vw));
+      transition: color .5s;
+    }
+
+    & > *:hover{
+      color:$redpink;
+    }
+  }
+
+  &__logo {
+    width: 3%;
+  }
 }

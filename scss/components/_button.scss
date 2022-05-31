@@ -1,11 +1,12 @@
-button{
+.btn{
     border:none;
     background-color: $mred;
     border-radius:5vw;
     width:calc(max(10rem,25%));
-    height:calc(max(3.5rem,7vh));
+    height:calc(max(3.5rem,3vw));
     transition-property: border,background-color,color;
     transition-duration:.5s;
+    // padding:0 5% ;
 
     &:hover{
         background-color: $lpink;

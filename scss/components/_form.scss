@@ -1,4 +1,37 @@
-.contact__form{
-    display:flex;
-    flex-direction: column;
-}
+.contact {
+    &__form {
+      display:flex;
+      flex-direction: column;
+      gap: 2rem;
+  
+  
+      input:not(.btn),
+      textarea {
+        border: 0.2rem solid $dred;
+        border-radius: 2.5rem;
+        background-color: transparent;
+        width: 100%;
+        padding-left: 3%;
+        font-size: $input;
+      }
+  
+      label{
+          color:transparent;
+      }
+  
+      input {
+        height: 6vh;
+      }
+  
+      textarea {
+        height: 30vh;
+        padding-top: 3%;
+      }
+    }
+  
+    &__submit{
+    // width:100%;
+    align-self: flex-end;
+
+    }
+  }

@@ -4,12 +4,12 @@ body {
 
 .container {
   width: calc(100% - 6rem);
+  padding-top: 1%;
   @extend %center-margin;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   grid-template-rows: minmax(1rem, 5vw) min-content 1fr min-content minmax(1rem, 5vw);
   column-gap: 2rem;
-  // @extend %border;
 
   & > * {
     width: 100%;
@@ -28,29 +28,27 @@ main {
   display: grid;
   gap: 2rem;
   grid-template-columns: repeat(10, 1fr);
-  grid-template-rows: 90vh repeat(3, 100vh) 90vh;
+  grid-template-rows: repeat(5,90vh);
 
   & > * {
     grid-column: 1 / 11;
     display: grid;
+    gap: inherit;
     grid-template-columns: inherit;
+  }
+
+  & > *:not(.menu) {
     justify-content: center;
     align-items: center;
-
-    & > * {
-      // @extend %border;
-    }
   }
 }
 
-.home,
-.visit {
-  &__txt {
-    grid-column: 1 / 6;
-  }
-
-  &__image {
-    grid-column: 7 / 11;
+.about,
+.visit,
+.contact,
+.menu {
+  &__header {
+    margin-bottom: 4%;
   }
 }
 
@@ -61,6 +59,6 @@ main {
   }
 
   &__txt {
-    grid-column: 6 / 11;
+    grid-column: 6 / 10;
   }
 }
