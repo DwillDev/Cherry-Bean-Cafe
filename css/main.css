@@ -442,3 +442,9 @@ img {
   -ms-flex-item-align: end;
       align-self: flex-end;
 }
+
+@media screen and (max-aspect-ratio: 1 / 1), (max-width: 500px) {
+  .container {
+    border: .1rem solid black;
+  }
+}
