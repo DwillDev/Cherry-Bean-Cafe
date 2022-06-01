@@ -6,29 +6,24 @@
   }
 
   &__header{
-    grid-column: 1 / 11;
+    // grid-column: 1 / 11;
   }
 
   &__txt {
-    grid-column:2 / 4;
+    // grid-column:2 / 4;
     display:flex;
     justify-content: space-evenly;
     flex-direction: column;
-    gap:5vh;
+    // gap:5vh;
     text-align: center;
   }
 
   &__image{
-    grid-column:5 / 10;
-  }
-
-  &__hours{
-
+    // grid-column:5 / 10;
   }
 
   &__address{
     font-style: normal;
-    
   }
 
   h3{

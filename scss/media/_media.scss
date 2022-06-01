@@ -1,6 +1,146 @@
-@media screen and (max-aspect-ratio: 1 / 1) , (max-width:500px){
-    .container{
-        border:.1rem solid black;
+@media screen and (orientation: landscape) {
+  //Typography
+  .menu,
+  .visit {
+    h2 {
+      text-align: center;
     }
-    
+  }
+
+  .home,
+  .about,
+  .contact {
+    h2 {
+      text-align: left;
+    }
+  }
+
+  //base
+  .container {
+    width: calc(100% - 6rem);
+    grid-template-columns: repeat(12, 1fr);
+  }
+
+  header,
+  footer {
+    grid-column: 1 / 13;
+  }
+
+  main {
+    grid-column: 2/12;
+    grid-template-columns: repeat(10, 1fr);
+
+    & > * {
+      grid-column: 1 / 11;
+    }
+
+    & > *:not(.menu) {
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
+  .about,
+  .contact {
+    &__image {
+      grid-column: 1 / 5;
+    }
+
+    &__txt {
+      grid-column: 6 / 10;
+    }
+  }
+
+  .divider {
+    grid-column: 1 / 13;
+  }
+
+  //Button
+  .btn {
+    width: calc(max(10rem, 25%));
+    height: calc(max(3.5rem, 3vw));
+  }
+
+  //Form
+  .contact__form {
+    input {
+      height: 6vh;
+    }
+
+    textarea {
+      height: 30vh;
+    }
+
+    .btn {
+      align-self: flex-end;
+    }
+  }
+
+  //Menu cards
+
+  //Header
+  .header {
+    &__menu {
+      display: none;
+    }
+  }
+
+  //Home
+  .home {
+    &__txt {
+      grid-column: 1 / 5;
+    }
+
+    &__image {
+      grid-column: 7 / 11;
+    }
+  }
+
+  //About
+  .about {
+    grid-auto-flow: column;
+  }
+
+  //Menu
+  .menu {
+    &__header {
+      grid-column: 1 / 11;
+    }
+
+    &__nav {
+      grid-column: 4 / 8;
+    }
+  }
+
+  //Visit
+  .visit {
+    &__header {
+      grid-column: 1 / 11;
+    }
+
+    &__txt {
+      grid-column: 2 / 4;
+      gap: 5vh;
+    }
+
+    &__image {
+      grid-column: 5 / 10;
+    }
+  }
+
+  //Contact
+
+  //Footer
+  .footer {
+    &__socials {
+      display: flex;
+    }
+
+    &__logo {
+      display: block;
+    }
+
+  }
+
+  //Navs
 }

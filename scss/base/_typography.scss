@@ -14,27 +14,12 @@ h2 {
 }
 
 h3 {
-  font-size:$h3;
+  font-size: $h3;
 }
 
 p {
   font-size: $p;
   font-weight: $med;
-}
-
-.menu,
-.visit {
-  h2 {
-    text-align: center;
-  }
-}
-
-.home,
-.about,
-.contact {
-  h2 {
-    text-align: left;
-  }
 }
 
 p {
@@ -73,14 +58,8 @@ li,
   }
 }
 
-.divider {
-  border: none;
-  border-bottom: 0.1rem solid rgba($redpink, 0.5);
-  grid-column: 1 / 13;
-}
-
 *::placeholder {
   font-family: $component;
-  color:rgba($redpink, 0.7);
-  font-size:$input;
+  color: rgba($redpink, 0.7);
+  font-size: $input;
 }
