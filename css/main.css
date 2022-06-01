@@ -288,6 +288,10 @@ img {
   cursor: pointer;
 }
 
+.header__nav--pc {
+  display: none;
+}
+
 .btn {
   border: none;
   background-color: #a51232;
@@ -454,5 +458,10 @@ img {
   }
   .footer__logo {
     display: block;
+  }
+  .header__nav--pc {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
 }

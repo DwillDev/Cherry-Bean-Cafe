@@ -139,8 +139,12 @@
     &__logo {
       display: block;
     }
-
   }
 
   //Navs
+  .header__nav {
+    &--pc {
+      display: flex;
+    }
+  }
 }

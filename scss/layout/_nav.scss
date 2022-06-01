@@ -13,3 +13,9 @@
     }
   }
 }
+
+.header__nav{
+  &--pc{
+    display:none;
+  }
+}
