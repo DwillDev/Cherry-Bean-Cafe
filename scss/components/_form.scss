@@ -1,32 +1,27 @@
-.contact__form {
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
+// .contact__form {
+//   display: flex;
+//   flex-direction: column;
+//   gap: 2rem;
 
-  input:not(.btn),
-  textarea {
-    border: 0.2rem solid $dred;
-    border-radius: 2.5rem;
-    background-color: transparent;
-    width: 100%;
-    padding-left: 3%;
-    font-size: $input;
-  }
+//   input:not(.btn),
+//   textarea {
+//     border: 0.2rem solid $dred;
+//     border-radius: 2.5rem;
+//     background-color: transparent;
+//     width: 100%;
+//     padding-left: 5%;
+//   }
 
-  label {
-    color: transparent;
-  }
+//   label {
+//     color: transparent;
+//   }
 
-  input {
-    // height: 6vh;
-  }
+//   input {
+//     height: calc(max(3vh,2.5rem));
+//   }
 
-  textarea {
-    // height: 30vh;
-    padding-top: 3%;
-  }
-
-  .btn {
-    // align-self: flex-end;
-  }
-}
+//   textarea {
+//     height: 15vh;
+//     padding-top: 5%;
+//   }
+// }

@@ -1,0 +1,28 @@
+.grid {
+  display: grid;
+  grid-template-rows: minmax(5rem, 10vh) 1fr minmax(5rem, 10vh);
+  row-gap: $gutter;
+}
+
+.row {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: $gutter;
+}
+
+.col {
+  grid-column: $full-mb;
+}
+
+.subrow {
+  grid-column: $full-mb;
+  @extend .row;
+}
+
+header .col {
+  grid-column: $s2;
+}
+
+main.row {
+  grid-template-rows: repeat(5, 90vh);
+}

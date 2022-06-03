@@ -1,15 +1,15 @@
-.btn{
-    border:none;
-    background-color: $mred;
-    border-radius:5vw;
-    // width:calc(max(10rem,25%));
-    // height:calc(max(3.5rem,3vw));
-    transition-property: border,background-color,color;
-    transition-duration:.5s;
+// .btn{
+//     border:none;
+//     background-color: $mred;
+//     border-radius:5vw;
+//     width:100%;
+//     height:calc(max(3.5rem,3vw));
+//     transition-property: border,background-color,color;
+//     transition-duration:.5s;
 
-    &:hover{
-        background-color: $lpink;
-        color:$mred;
-        border:.1rem solid $mred;
-    }
-}
+//     &:hover{
+//         background-color: $lpink;
+//         color:$mred;
+//         border:.1rem solid $mred;
+//     }
+// }

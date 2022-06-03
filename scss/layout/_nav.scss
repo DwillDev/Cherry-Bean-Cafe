@@ -1,21 +1,21 @@
-.nav {
-  margin: auto 0;
+// .nav {
+//   margin: auto 0;
 
-  &__list--pc {
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    gap: clamp(2rem, 2vw, 4rem);
+//   &__list--pc {
+//     display: flex;
+//     align-items: center;
+//     justify-content: space-evenly;
+//     gap: clamp(2rem, 2vw, 4rem);
 
-    & > *:hover {
-      font-weight: $semibold;
-      cursor:pointer;
-    }
-  }
-}
+//     & > *:hover {
+//       font-weight: $semibold;
+//       cursor:pointer;
+//     }
+//   }
+// }
 
-.header__nav{
-  &--pc{
-    display:none;
-  }
-}
+// .header__nav{
+//   &--pc{
+//     display:none;
+//   }
+// }

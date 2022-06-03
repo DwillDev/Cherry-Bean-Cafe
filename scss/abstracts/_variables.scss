@@ -1,3 +1,35 @@
+//Grid layout
+$grid: #f6f6f6;
+$row: #bfbfbf;
+$subrow: #5b5b5b;
+$col: #8c8c8c;
+
+$gutter: 20px;
+
+//Mobile layout
+$full-mb: span 4;
+$left-mb: 1 / span 2;
+$right-mb: 3 / span 2;
+$mid-mb: 2 / span 2;
+
+//PC Layout
+$full-pc: span 12;
+$left-pc: 1 / span 6;
+$right-pc: 7 / span 6;
+
+//Spans
+$s1: span 1;
+$s2: span 2;
+$s3: span 3;
+$s4: span 4;
+$s5: span 5;
+$s6: span 6;
+$s7: span 7;
+$s8: span 8;
+$s9: span 9;
+$s10: span 10;
+$s11: span 11;
+
 //Color
 $dred:hsl(346, 100%, 17%);
 $mred:hsl(347, 80%, 36%);
@@ -16,10 +48,18 @@ $semibold:600;
 $bold:700;
 
 //Sizes
-$h1:calc(max(2.2rem,3vw));
-$h2:calc(max(2rem,2.8vw));
-$h3:calc(max(1.7rem,1.7vw));
-$p: calc(max(1.1rem,1.3vw));
-$input:calc(max(1rem,1vw));
-$button:calc(max(1rem,.7vw));
-$nav:calc(max(1rem,1vw));
+$h1-pc:calc(max(2.2rem,3vw));
+$h2-pc:calc(max(2rem,2.8vw));
+$h3-pc:calc(max(1.7rem,1.7vw));
+$p-pc: calc(max(1.1rem,1.3vw));
+$input-pc:calc(max(1rem,1vw));
+$button-pc:calc(max(1rem,.7vw));
+$nav-pc:calc(max(1rem,1vw));
+
+$h1-mb:calc(max(2.2rem,7vw));
+$h2-mb:calc(max(2rem,6.5vw));
+$h3-mb:calc(max(1.7rem,4.5vw));
+$p-mb: calc(max(1.1rem,3.5vw));
+$input-mb:calc(max(1rem,1vw));
+$button-mb:calc(max(1rem,2.5vw));
+$nav-mb:calc(max(1rem,3vw));

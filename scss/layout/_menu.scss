@@ -1,21 +1,21 @@
-.menu {
-  grid-template-rows: min-content 1fr;
+// .menu {
+//   grid-template-rows: min-content 1fr;
 
-  &__header {
-    // grid-column: 1 / 11;
-  }
+//   & > * {
+//     grid-column: 1 / 5;
+//   }
 
-  &__nav {
-    justify-self: center;
-    // grid-column: 4/8;
-  }
-  &__list {
-    padding-bottom: 1.5%;
-    @extend .nav__list--pc;
-  }
+//   &__nav {
+//     justify-self: center;
+//   }
+  
+//   &__list {
+//     padding-bottom: 1.5%;
+//     @extend .nav__list--pc;
+//   }
 
-  .divider {
-    border-bottom-width: 0.4rem;
-    width:100%;
-  }
-}
+//   .divider {
+//     border-bottom-width: 0.4rem;
+//     width:100%;
+//   }
+// }

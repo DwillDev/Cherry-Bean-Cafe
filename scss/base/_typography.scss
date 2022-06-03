@@ -1,65 +1,70 @@
-h1,
-h2,
-h3 {
-  font-family: $header;
-  color: $dred;
-  font-weight: $med;
-}
-h1 {
-  font-size: $h1;
-}
+// h1,
+// h2,
+// h3 {
+//   font-family: $header;
+//   color: $dred;
+//   font-weight: $med;
+//   text-align: center;
+// }
+// h1 {
+//   font-size: $h1-mb;
+// }
 
-h2 {
-  font-size: $h2;
-}
+// h2 {
+//   font-size: $h2-mb;
+// }
 
-h3 {
-  font-size: $h3;
-}
+// h3 {
+//   font-size: $h3-mb;
+// }
 
-p {
-  font-size: $p;
-  font-weight: $med;
-}
+// p {
+//   font-size: $p-mb;
+//   font-weight: $med;
+//   font-family: $subtext;
+//   color: $redpink;
+//   text-align: center;
+//   padding: 0 2rem;
+// }
 
-p {
-  font-family: $subtext;
-  color: $redpink;
-}
+// .btn,
+// li {
+//   font-family: $component;
+// }
 
-.btn,
-li {
-  font-family: $component;
-}
+// .btn {
+//   color: $lpink;
+//   font-size: $button-mb;
+// }
 
-.btn {
-  color: $lpink;
-  font-size: $button;
-}
+// ul {
+//   list-style-type: none;
+//   font-size: $nav-mb;
+// }
 
-ul {
-  list-style-type: none;
-  font-size: $nav;
-}
+// li,
+// .iconify {
+//   color: $dred;
+// }
 
-li,
-.iconify {
-  color: $dred;
-}
+// .item {
+//   &__name,
+//   &__cc {
+//     color: $lpink;
+//   }
 
-.item {
-  &__name,
-  &__cc {
-    color: $lpink;
-  }
+//   &__desc {
+//     color: $mred;
+//   }
+// }
 
-  &__desc {
-    color: $mred;
-  }
-}
+// input:not(.btn),
+// textarea {
+//   font-size: $input-mb;
+// }
 
-*::placeholder {
-  font-family: $component;
-  color: rgba($redpink, 0.7);
-  font-size: $input;
-}
+// *::placeholder {
+//   font-family: $component;
+//   color: rgba($redpink, 0.7);
+//   font-size: $input-mb;
+// }

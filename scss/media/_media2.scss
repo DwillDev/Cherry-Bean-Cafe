@@ -1,0 +1,225 @@
+// @media screen and (min-aspect-ratio:1 / 1) {
+//   //Typography
+//   h1 {
+//     text-align: left;
+//     font-size: $h1-pc;
+//   }
+
+//   h2 {
+//     font-size: $h2-pc;
+//   }
+
+//   h3 {
+//     font-size: $h3-pc;
+//   }
+
+//   .menu,
+//   .visit {
+//     h2 {
+//       text-align: center;
+//     }
+//   }
+
+//   .home,
+//   .about,
+//   .contact {
+//     h2 {
+//       text-align: left;
+//     }
+//   }
+
+//   p {
+//     text-align: left;
+//     font-size: $p-pc;
+//     padding:unset;
+//   }
+
+//   .visit p {
+//     text-align: center;
+//   }
+
+//   .btn {
+//     font-size: $button-pc;
+//   }
+
+//   ul {
+//     font-size: $nav-pc;
+//   }
+
+//   input:not(.btn),
+//   textarea {
+//     font-size: $input-pc;
+//   }
+
+//   *::placeholder {
+//     font-size: $input-pc;
+//   }
+
+//   //base
+//   .container {
+//     width: calc(100% - 6rem);
+//     margin: 0 auto;
+//     grid-template-columns: repeat(12, 1fr);
+//     grid-template-rows: minmax(1rem, 5vw) min-content 1fr min-content minmax(1rem, 5vw);
+//   }
+
+//   header,
+//   footer {
+//     grid-column: 1 / 13;
+//   }
+
+//   main {
+//     grid-column: 2/12;
+//     grid-template-columns: repeat(10, 1fr);
+//     grid-template-rows: repeat(5, 90vh);
+//     width: 100%;
+
+//     & > * {
+//       grid-column: 1 / 11;
+//       grid-template-columns: inherit;
+//     }
+
+//     & > *:not(.menu) {
+//       justify-content: center;
+//       align-items: center;
+//     }
+
+//     & > *:not(.visit):not(.menu) {
+//       grid-template-rows: 1fr;
+//     }
+//   }
+
+//   .home,
+//   .contact {
+//     grid-column: 1 / 11;
+//   }
+
+//   .about,
+//   .contact {
+//     &__image {
+//       grid-column: 1 / 5;
+//     }
+
+//     &__txt {
+//       grid-column: 6 / 10;
+//     }
+//   }
+
+//   .divider {
+//     grid-column: 1 / 13;
+//   }
+
+//   //Button
+//   .btn {
+//     width: calc(max(10rem, 25%));
+//   }
+
+//   //Form
+//   .contact__form {
+//     input:not(.btn),
+//     textarea {
+//       padding-left: 3%;
+//     }
+
+//     input {
+//       height: 6vh;
+//     }
+
+//     textarea {
+//       height: 30vh;
+//       padding-top: 3%;
+//     }
+
+//     .btn {
+//       align-self: flex-end;
+//     }
+//   }
+
+//   //Menu cards
+
+//   //Header
+//   .header {
+//     &__menu {
+//       display: none;
+//     }
+
+//     &__logo {
+//       width: 7%;
+//     }
+//   }
+
+//   //Home
+//   .home {
+//     &__txt {
+//       grid-column: 1 / 5;
+//       grid-row: unset;
+//     }
+
+//     &__image {
+//       grid-column: 7 / 11;
+//     }
+//   }
+
+//   //About
+//   .about {
+//     grid-auto-flow: column;
+
+//     &__image {
+//       grid-row: unset;
+//     }
+//   }
+
+//   //Menu
+//   .menu {
+//     &__header {
+//       grid-column: 1 / 11;
+//     }
+
+//     &__nav {
+//       grid-column: 4 / 8;
+//     }
+//   }
+
+//   //Visit
+//   .visit {
+//     grid-template-rows: min-content 1fr;
+
+//     &__header {
+//       grid-column: 1 / 11;
+//     }
+
+//     &__txt {
+//       grid-column: 2 / 4;
+//       gap: 5vh;
+//     }
+
+//     &__image {
+//       grid-column: 5 / 10;
+//     }
+//   }
+
+//   //Contact
+//   .contact {
+//     &__image {
+//       grid-row: unset;
+//     }
+//   }
+
+//   //Footer
+//   .footer {
+//     &__socials {
+//       display: flex;
+//     }
+
+//     &__logo {
+//       display: block;
+//     }
+//   }
+
+//   //Navs
+//   .header__nav {
+//     &--pc {
+//       display: flex;
+//     }
+//   }
+// }
