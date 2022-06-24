@@ -48,18 +48,25 @@ $semibold:600;
 $bold:700;
 
 //Sizes
-$h1-pc:calc(max(2.2rem,3vw));
-$h2-pc:calc(max(2rem,2.8vw));
-$h3-pc:calc(max(1.7rem,1.7vw));
-$p-pc: calc(max(1.1rem,1.3vw));
-$input-pc:calc(max(1rem,1vw));
-$button-pc:calc(max(1rem,.7vw));
-$nav-pc:calc(max(1rem,1vw));
+$f-size-pc: (
+"h1":calc(max(2.2rem,3vw)),
+"h2":calc(max(2rem,2.8vw)),
+"h3":calc(max(1.7rem,1.7vw)),
+"p": calc(max(1.1rem,1.3vw)),
+"input":calc(max(1rem,1vw)),
+"button":calc(max(1rem,.7vw)),
+"nav":calc(max(1rem,1vw))
+);
 
-$h1-mb:calc(max(2.2rem,7vw));
-$h2-mb:calc(max(2rem,6.5vw));
-$h3-mb:calc(max(1.7rem,4.5vw));
-$p-mb: calc(max(1.1rem,3.5vw));
-$input-mb:calc(max(1rem,1vw));
-$button-mb:calc(max(1rem,2.5vw));
-$nav-mb:calc(max(1rem,3vw));
+$f-size-mb: (
+    "h1":calc(max(2.2rem,7vw)),
+    "h2":calc(max(2rem,6.5vw)),
+    "h3":calc(max(1.7rem,4.5vw)),
+    "p": calc(max(1.1rem,3.5vw)),
+    "input":calc(max(1rem,1vw)),
+    "button":calc(max(1rem,2.5vw)),
+    "nav":calc(max(1rem,3vw)),
+);
+
+//Breakpoints
+$ap-pc-sm:"4/3";

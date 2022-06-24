@@ -27,6 +27,102 @@ body {
   background-color: #f4e6e9;
 }
 
+body h1 {
+  font-size: calc(max(2.2rem,7vw));
+}
+
+body h2 {
+  font-size: calc(max(2rem,6.5vw));
+}
+
+body h3 {
+  font-size: calc(max(1.7rem,4.5vw));
+}
+
+body [class$="__para"] {
+  font-size: calc(max(1.1rem,3.5vw));
+}
+
+body [class$="__btn"] {
+  font-size: calc(max(1rem,2.5vw));
+}
+
+body [class$="__list"] {
+  font-size: calc(max(1rem,3vw));
+}
+
+body input:not([class$="__btn"]),
+body textarea,
+body *::-webkit-input-placeholder {
+  font-size: calc(max(1rem,1vw));
+}
+
+body input:not([class$="__btn"]),
+body textarea,
+body *:-ms-input-placeholder {
+  font-size: calc(max(1rem,1vw));
+}
+
+body input:not([class$="__btn"]),
+body textarea,
+body *::-ms-input-placeholder {
+  font-size: calc(max(1rem,1vw));
+}
+
+body input:not([class$="__btn"]),
+body textarea,
+body *::placeholder {
+  font-size: calc(max(1rem,1vw));
+}
+
+[class$="__header"],
+[class$="__subheader"] {
+  font-family: "Yeseva One", cursive;
+  color: #570014;
+  font-weight: 400;
+}
+
+[class$="__para"] {
+  font-family: "EB Garamond", serif;
+  color: #ce4051;
+  font-weight: 400;
+}
+
+[class$="__btn"] {
+  font-family: "Inter", sans-serif;
+  color: #f4e6e9;
+}
+
+[class$="__list"] {
+  font-family: "Inter", sans-serif;
+  color: #570014;
+  list-style-type: none;
+}
+
+[class$="__icon"] {
+  color: #570014;
+}
+
+*::-webkit-input-placeholder {
+  font-family: "Inter", sans-serif;
+  color: rgba(206, 64, 81, 0.7);
+}
+
+*:-ms-input-placeholder {
+  font-family: "Inter", sans-serif;
+  color: rgba(206, 64, 81, 0.7);
+}
+
+*::-ms-input-placeholder {
+  font-family: "Inter", sans-serif;
+  color: rgba(206, 64, 81, 0.7);
+}
+
+*::placeholder {
+  font-family: "Inter", sans-serif;
+  color: rgba(206, 64, 81, 0.7);
+}
+
 html {
   font-size: 62.5%;
 }
@@ -90,7 +186,7 @@ main.row, main.subrow {
       grid-template-rows: repeat(5, 90vh);
 }
 
-@media screen and (orientation: landscape) {
+@media screen and (min-aspect-ratio: 4 / 3) {
   .row, .subrow {
     -ms-grid-columns: (1fr)[12];
         grid-template-columns: repeat(12, 1fr);
@@ -115,5 +211,43 @@ main.row, main.subrow {
   }
   .pc {
     display: block;
+  }
+  body h1 {
+    font-size: calc(max(2.2rem,3vw));
+  }
+  body h2 {
+    font-size: calc(max(2rem,2.8vw));
+  }
+  body h3 {
+    font-size: calc(max(1.7rem,1.7vw));
+  }
+  body [class$="__para"] {
+    font-size: calc(max(1.1rem,1.3vw));
+  }
+  body [class$="__btn"] {
+    font-size: calc(max(1rem,.7vw));
+  }
+  body [class$="__list"] {
+    font-size: calc(max(1rem,1vw));
+  }
+  body input:not([class$="__btn"]),
+  body textarea,
+  body *::-webkit-input-placeholder {
+    font-size: calc(max(1rem,1vw));
+  }
+  body input:not([class$="__btn"]),
+  body textarea,
+  body *:-ms-input-placeholder {
+    font-size: calc(max(1rem,1vw));
+  }
+  body input:not([class$="__btn"]),
+  body textarea,
+  body *::-ms-input-placeholder {
+    font-size: calc(max(1rem,1vw));
+  }
+  body input:not([class$="__btn"]),
+  body textarea,
+  body *::placeholder {
+    font-size: calc(max(1rem,1vw));
   }
 }

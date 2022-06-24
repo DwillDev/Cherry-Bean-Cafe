@@ -1,0 +1,85 @@
+//Typography
+@mixin header-style {
+  font-family: $header;
+  color: $dred;
+  font-weight: $med;
+}
+
+@mixin para-style {
+  font-family: $subtext;
+  color: $redpink;
+  font-weight: $med;
+}
+
+@mixin comp-style($type) {
+  font-family: $component;
+  @if $type == "btn" {
+    color: $lpink;
+  } @else if $type == "list" {
+    color: $dred;
+    list-style-type: none;
+  } @else if $type == "ph" {
+    color: rgba($redpink, 0.7);
+  }
+}
+
+@mixin font-size($ap) {
+  @if $ap == "mb" {
+    @for $i from 1 through 3 {
+      h#{$i} {
+        font-size: map-get($f-size-mb, "h#{$i}");
+      }
+    }
+
+    [class$="__para"] {
+      font-size: map-get($f-size-mb, "p");
+    }
+
+    [class$="__btn"] {
+      font-size: map-get($f-size-mb, "button");
+    }
+
+    [class$="__list"] {
+      font-size: map-get($f-size-mb, "nav");
+    }
+
+    input:not([class$="__btn"]),
+    textarea,
+    *::placeholder {
+      font-size: map-get($f-size-mb, "input");
+    }
+  } @else if $ap == "pc" {
+    @for $i from 1 through 3 {
+      h#{$i} {
+        font-size: map-get($f-size-pc, "h#{$i}");
+      }
+    }
+
+    [class$="__para"] {
+      font-size: map-get($f-size-pc, "p");
+    }
+
+    [class$="__btn"] {
+      font-size: map-get($f-size-pc, "button");
+    }
+
+    [class$="__list"] {
+      font-size: map-get($f-size-pc, "nav");
+    }
+
+    input:not([class$="__btn"]),
+    textarea,
+    *::placeholder {
+      font-size: map-get($f-size-pc, "input");
+    }
+  }
+}
+
+//Media Queries
+@mixin screen($ap) {
+  @if $ap == "pc" {
+    @media screen and (min-aspect-ratio: $ap-pc-sm) {
+      @content;
+    }
+  }
+}

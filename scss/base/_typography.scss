@@ -1,70 +1,30 @@
-// h1,
-// h2,
-// h3 {
-//   font-family: $header;
-//   color: $dred;
-//   font-weight: $med;
-//   text-align: center;
-// }
-// h1 {
-//   font-size: $h1-mb;
-// }
+//Font Sizes
+body {
+  @include font-size(mb);
+}
 
-// h2 {
-//   font-size: $h2-mb;
-// }
+//Font Styles
+[class$="__header"],
+[class$="__subheader"] {
+  @include header-style;
+}
 
-// h3 {
-//   font-size: $h3-mb;
-// }
+[class$="__para"] {
+  @include para-style;
+}
 
-// p {
-//   font-size: $p-mb;
-//   font-weight: $med;
-//   font-family: $subtext;
-//   color: $redpink;
-//   text-align: center;
-//   padding: 0 2rem;
-// }
+[class$="__btn"] {
+  @include comp-style(btn);
+}
 
-// .btn,
-// li {
-//   font-family: $component;
-// }
+[class$="__list"] {
+  @include comp-style(list);
+}
 
-// .btn {
-//   color: $lpink;
-//   font-size: $button-mb;
-// }
+[class$="__icon"] {
+  color: $dred;
+}
 
-// ul {
-//   list-style-type: none;
-//   font-size: $nav-mb;
-// }
-
-// li,
-// .iconify {
-//   color: $dred;
-// }
-
-// .item {
-//   &__name,
-//   &__cc {
-//     color: $lpink;
-//   }
-
-//   &__desc {
-//     color: $mred;
-//   }
-// }
-
-// input:not(.btn),
-// textarea {
-//   font-size: $input-mb;
-// }
-
-// *::placeholder {
-//   font-family: $component;
-//   color: rgba($redpink, 0.7);
-//   font-size: $input-mb;
-// }
+*::placeholder {
+  @include comp-style(ph);
+}

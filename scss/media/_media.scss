@@ -1,4 +1,4 @@
-@media screen and (orientation: landscape) {
+@include screen(pc) {
   //Grid
   .row {
     grid-template-columns: repeat(12, 1fr);
@@ -19,17 +19,22 @@
   .subrow {
     grid-column: $full-pc;
 
-    &__header{
-          grid-column: $full-pc;
+    &__header {
+      grid-column: $full-pc;
     }
   }
 
   //Display
-  .mb{
-    display:none;
+  .mb {
+    display: none;
   }
 
-  .pc{
-    display:block;
-}
+  .pc {
+    display: block;
+  }
+
+  //Typography
+  body {
+    @include font-size(pc);
+  }
 }
